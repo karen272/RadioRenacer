@@ -20,7 +20,7 @@
 
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
@@ -59,6 +59,19 @@ body{
 section{
     padding: 2rem 7%;
 }
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom:3.5rem ;
+    font-size: 4rem;
+}
+.heading span{
+    color: #D91A1A;
+    text-transform: uppercase ;
+}
+
 
 .header{
     background: var(--bg);
@@ -141,6 +154,24 @@ section{
     -webkit-text-stroke: 0.5px black;
 }
 
+.row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px 0; 
+}
+.escuchar-en-vivo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.escuchar-en-vivo img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
 @media (max-width:1350px){
     html{
         font-size: 55%;
@@ -150,6 +181,14 @@ section{
     }
     section{
         padding: 2rem;
+    }
+
+    .escuchar {
+        padding: 20px 0; 
+    }
+
+    .escuchar-en-vivo img {
+        max-width: 100%; 
     }
 }
 
@@ -181,6 +220,29 @@ section{
         font-size: 2rem;
     }
 
+    .escuchar {
+        padding: 30px 0; /* Reduce el padding en pantallas más pequeñas */
+    }
+
+    .row {
+        flex-direction: column; /* Cambia la dirección del flex para que los elementos se apilen */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: auto; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .escuchar-en-vivo img {
+        max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    }
+}
+
+@media (max-width: 480px) {
+    .escuchar {
+        padding: 20px 0; /* Reduce aún más el padding en pantallas muy pequeñas */
+    }
+    .escuchar-en-vivo img {
+        max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+    }
 }
 
 
