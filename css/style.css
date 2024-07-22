@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color:#F2F2F2;
+    --black:#0C0D0C;
+    --bg:#595959;
+    --border:1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 10%;
+    /*border-bottom: var(--border);*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0 ;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 4rem;
+}
+
+.header .logo-text{
+    color:#D91A1A;
+    text-decoration: none;
+    height:2rem;
+    font-size: 0.9rem;
+    -webkit-text-stroke: 0.5px black;
+}
+.header .logo-text span{
+    color:#fff;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;  
+}
+
+.header .icons div{
+    color:#fff ;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color) ;
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+@media (max-width:1350px){
+    html{
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem 10%;
+    }
+}
+
+@media (max-width:790px){
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh -9.5rem);
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .logo-text{
+        font-size:1rem ;
+    }
+    
+    .header .navbar a{
+        color:var(--black);
+        display:block;
+        margin: 1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+}
+
+

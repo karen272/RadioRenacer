@@ -1,0 +1,5 @@
+negro: #0C0D0C
+rojo:#D91A1A
+rosita: #F25C5C
+gis claro: #F2F2F2
+gris oscuro: #595959
