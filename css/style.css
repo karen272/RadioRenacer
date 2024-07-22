@@ -42,6 +42,24 @@ body{
     background: var(--bg);
 }
 
+.btn{
+     margin-top: 1rem;
+     display: inline-block;
+     padding: 3rem 3rem;
+     font-size: 1.7rem;
+     color: #fff;
+     background: #ff0000;
+     cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .2rem;
+
+}
+
+section{
+    padding: 2rem 7%;
+}
+
 .header{
     background: var(--bg);
     display: flex;
@@ -98,6 +116,30 @@ body{
     display: none;
 }
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/fondo1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.home .content h3 span{
+    color:#D91A1A;
+    -webkit-text-stroke: 0.5px black;
+}
 
 @media (max-width:1350px){
     html{
@@ -105,6 +147,9 @@ body{
     }
     .header {
         padding: 2rem 10%;
+    }
+    section{
+        padding: 2rem;
     }
 }
 
