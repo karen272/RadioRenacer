@@ -155,7 +155,6 @@ section {
     padding: 30px 0 60px 0;
 }
 .contenedor-sobre-nosotros{
-    color: #fff;
     display: flex;
     justify-content: space-evenly;
 }
@@ -163,6 +162,11 @@ section {
 .contenido-textos p{
     padding: 0px 0px 30px 15px;
     text-align: center;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
 }
 
 .row {
