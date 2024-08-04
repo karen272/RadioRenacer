@@ -41,7 +41,7 @@ html::-webkit-scrollbar-thumb {
 body {
     background: var(--bg);
 }
-
+/* btn escuchar en vivo */
 .btn {
      margin-top: 1rem;
      display: inline-block;
@@ -227,10 +227,10 @@ section {
 }
 
 .contenido-textos p {
-    padding: 0px 0px 30px 15px;
-    font-weight: 300;
-    text-align: center;
-    font-size: 3rem;
+    padding: 0px 50px 30px 90px;
+    font-weight: 550;
+    text-align: left;
+    font-size: 2rem;
 }
 
 .footer {
