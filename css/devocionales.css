@@ -1,0 +1,127 @@
+/*Galería*/
+
+.productos{
+    background: rgba(255, 34, 34, 0.133) ; /* Color del fondo a partir de productos*/
+}
+
+
+
+.productos p{
+    color:white;
+    padding: 100px 12px;
+    font-family: 'sans-serif';
+    font-size: 30px;
+}
+
+.productos .container{
+    
+    padding: 150px 12px;
+}
+
+.productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+.productos .programas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.carta {
+    position: relative;
+    width: 30%; 
+    margin-bottom: 10px;
+    height: auto; 
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc; /* Añade un borde para una mejor visualización */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.carta h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: bold; 
+    color: #fff;
+}
+
+
+.carta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carta .carta-texto {
+    padding: 10px; 
+    background-color: #595959; /* Fondo semi-transparente */
+}
+
+.carta .descripcionProducto {
+    font-size: 17px; 
+    margin: 10px 0; 
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.mostrarDescripcion {
+    font-size: 16px; 
+    font-weight: normal;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(211, 41, 84);
+    margin-top: 10px; /* Espacio adicional entre el botón y la imagen */
+}
+
+.mostrarDescripcion:hover {
+    background-color: rgba(132, 6, 37, 0.7);
+}
+
+.carta .descripcionProducto span {
+    display: none;
+}
+
+.carta.mostrandoDescripcion .descripcionProducto span {
+    display: inline;
+}
+
+#cartas-container {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea las cartas en la parte superior */
+}
+
+
+/* hago la pág responsive :) */
+
+@media screen and (max-width:900px){
+
+    /* Galeria */
+
+    .carta{
+        width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (max-width:400px) {
+    
+    /* Galeria */
+
+    .imagen-produ {
+        width: 95%;
+    }
+
+}
