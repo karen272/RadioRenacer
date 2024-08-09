@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { nombre: "Todo lo hizo Dios hermoso en su tiempo", 
             descripcion: "En Eclesiastés 3:11, se nos dice que “Dios hizo todo hermoso en su momento, y ha puesto eternidad en el corazón del hombre, aunque éste no alcanza a comprender todo lo que Dios ha hecho desde el principio hasta el fin.” Este versículo me ha hecho pensar mucho en cómo manejamos nuestras vidas y nuestras expectativas.A veces, nos sentimos impacientes o frustrados porque las cosas no suceden en el momento que queremos. Queremos que nuestras oraciones sean respondidas inmediatamente o que nuestros sueños se hagan realidad sin demora. Pero este versículo nos recuerda que Dios tiene un plan perfecto y que todo sucede en su tiempo. Aunque no siempre entendemos sus caminos, podemos confiar en que Él está trabajando para nuestro bien.Creo que esto nos enseña a tener más paciencia y a mantener la esperanza. En lugar de preocuparnos o apresurarnos, podemos esperar con confianza en el tiempo perfecto de Dios. Cada día es una oportunidad para vivir con propósito y significado, alineándonos con el plan eterno que Dios tiene para nosotros. Sé que puede ser difícil esperar, pero recuerda que Dios hará todo hermoso en su momento.Pastor Ricardo Carlos", 
             imagen: "../img_devocionales/hermosoEnSuTiempo.png" },
-            
     ];
 
     productos.forEach((producto) => {
